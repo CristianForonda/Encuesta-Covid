@@ -1,0 +1,12 @@
+https://www.segurossura.com.co/encuestas/vacunacioneps/index.html?Tipide%20ID=CC&Numide%20ID=94532073&Tipafi%20ID=B&Prinom%20ID=GABRIEL&Segnom%20ID=%20&Priape%20ID=BORRERO&Segape%20ID=CORDOBA&Fecnac%20ID=13/09/1990&Etapa%20ID=ETAPA%203&Edad%20ID=42&Sexo%20ID=M&Telefono%20Afiliaciones%20ID=3158396870&Telefono%20Afiliaciones%202%20ID=5147024&Telefono%20Afiliaciones%203%20ID=4629295&Telefono%20Afiliaciones%204%20ID=3158396870&Telefono%20Afiliaciones%205%20ID=5147024&Telefono%20Cliente%20ID=4629295&Telefono%20Coronapp%20ID=&Telefono%20Formulario%20ID=5147024&Celular%20Afiliaciones%20ID=3158396870&Celular%20Cliente%20ID=3158396870&Celular%20Formulario%20ID=3158396870&Celular%20Secretarias%20ID=&Email%20Afiliaciones%20ID=GABRIELBORRERO@GMAIL.COM&Email%20Cliente%20ID=gabrielborrero@gmail.com&Email%20Formulario%20ID=gabrielborrero@gmail.com&Regional%20Final%20ID=Cali&Ips%20Asignada%20ID=BOGOT%C3%81%20-%20PROYECTAR%20SALUD%20SAS&Ind%20Pac%20ID=0&Ind%20Poliza%20ID=0&Ips%20Vacunadora%20Dosis%201%20ID=BOGOT%C3%81%20-%20PROYECTAR%20SALUD%20SAS&Gestion%20ID=Validar%20Registro%20de%20vacunaci%C3%B3n%20o%20Inasistencia%20primera%20dosis&Domiciliario=0&NitVacunador=900504265&RazonSocialVacunador=IPS%20SANANGEL&nroDosis=2&NOMBRE%20IPS%20AGRUPACION=IPS%20SANANGEL
+
+
+1. Investigar las mejores prácticas en términos de UX (usabilidad, AI, accesibilidad, UI, etc.) que sean aplicables al negocio.
+2. Realizar un estudio comparativo sobre los productos y servicios del área que nos interesa, con el fin de detectar las mejores prácticas y su aplicación.
+3. Analizar las necesidades del usuario a través del diseño participativo; así como producir definiciones de las necesidades de los usuario por medio de personificaciones, storyboard, escenarios y diagramas de flujo.
+4. Validar hipótesis con usuarios de acuerdo a la data generada.
+5. Entender la voz del cliente, negocio y del mercado para balancearla con los resultados arrojados de las pruebas de usuario, de manera que se proponga de forma asertiva las mejoras a la experiencia.
+6. Análisis de reportes de analytics en el embudo de conversión para mejorar la UX del portal y de los activos que participen en la estrategia del producto.
+7. Acompañar los proyectos de Nativos y Plataforma digital desde el frente de experiencia de usuario UX/UI.
+8. Asistir a las planeaciones del equipo base y los proyectos.
+9. Entrega de experiencias digitales con los entregables de Arquitectura de información, Benchmark, wireframes, prototipo de alta, diseño iteractivo y visual para los poroyectos que acompañe.

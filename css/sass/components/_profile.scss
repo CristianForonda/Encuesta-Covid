@@ -1,0 +1,119 @@
+// Estilos módulo perfil
+.main-profile{
+    
+    .dropdown-menu{
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+}
+
+.profile{
+    border: 1px solid #EFEFEF;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 300px;
+    box-shadow: 0 2px 8px -2px #00000054;
+    @include border-radius(10px);
+
+    &__top{
+        align-items: center;
+        background-color: #F5F7FB;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+
+        .circle{
+            height: 64px;
+            margin-right: 15px;
+            width: 25%;
+
+            &__progress{
+                position: relative;
+                display: inline-block;
+                // margin: $spacing;
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                background-color: $bg-gray;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    height: 54px;
+                    width: 54px;
+                    border-radius: 50%; 
+                    background-color: white;
+                }
+
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%; 
+                    background-color: $blue;
+                }  
+            }
+
+            &__number{
+                color: $c-gray-3;
+                font-family: $rt;
+                font-size: 1.1rem;
+                font-weight: bold;
+                line-height: 1;
+                text-align: center;
+                top: calc(50% - 9px);
+                position: absolute;
+                width: 100%;
+            }
+        }
+
+        .text{
+            width: 75%;
+                
+            h3{
+                font-size: 1.125rem;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            p{
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    &__list{
+
+        ul{
+
+            li{
+
+                a{
+                    display: block;
+                    font-family: $rt;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    padding: 15px;
+
+                    &:hover{
+                        text-decoration: none;
+                    }
+
+                    i{
+                        margin-right: 10px;
+                        font-size: 20px;
+                    }
+                }
+
+                &:last-child{
+                    background-color: $bg-gray;   
+                }
+            }
+        }
+    }
+}

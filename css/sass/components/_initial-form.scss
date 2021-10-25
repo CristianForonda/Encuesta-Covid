@@ -1,0 +1,187 @@
+.initial-form{
+    margin-bottom: 3rem;
+
+    .title{
+        margin: 0 auto 2rem;
+        max-width: 370px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .steps {
+        text-align: center;
+        padding: 0 0 2rem;
+    
+        ul {
+            display: inline-block;
+            padding: 10px 0 0;
+            margin-bottom: 0;
+        
+            li {
+                float: left;
+                margin-left: 25px;
+                
+                @media (max-width: 768px) {
+                    margin-left: 8px;
+                }
+        
+                a {
+                    font-family: $rt;
+                    display: block;
+                    text-decoration: none;
+                    color: $c-gray-6;
+                    font-size: 14px; 
+        
+                    span,
+                    i {
+                        display: inline-block;
+                        height: 22px;
+                        width: 22px;
+                        margin-right: 5px;
+                    }
+                    
+                    span {
+                        background-color: #dfdfdf;
+                        font-weight: 600;
+                        font-size: 14px;
+                        color: $c-gray-6;
+                        text-align: center;
+                        @include border-radius(50%);
+    
+                        @media (max-width: 768px) {
+                            height: 18px;
+                            width: 18px;
+                            font-size: 12px;
+                            line-height: 17px;
+                        }
+                    } 
+                    
+                    p {
+                        display: inline-block;
+                        color: $c-gray-3;
+    
+                        @media (max-width: 768px) {
+                            display: none;
+                        }
+                    }
+                    
+                    i {
+                        display: none;
+                    }
+                }
+                
+                &.active {
+                    
+                    @media (max-width: 768px) {
+                        margin-left: 0;
+                    }
+    
+                    a {
+                        color: $blue;
+                        font-weight: 600;
+                        
+                        span {
+                            color: $white;
+                            background-color: $blue;
+                        }
+    
+                        p{
+                            color: $blue;
+    
+                            @media (max-width: 768px) {
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+                
+                &.ok {
+                    position: relative;
+                    margin-left: 50px;
+
+                    @media (max-width: 768px) {
+                        margin-left: 30px;
+                    }   
+    
+                    a {
+                        color: $c-gray-3;
+                        margin-top: 2px;
+                        font-weight: 600;
+                    
+                        span {
+                            display: none;
+                        }
+                    
+                        i {
+                            display: block;
+                            color: $c-gray-3;
+                            font-size: 22px;
+                            position: absolute;
+                            left: -30px;
+                            top: 0;
+                            @include icon; 
+    
+                            @media (max-width: 768px) {
+                                font-size: 18px; 
+                                top: 0.25rem;
+                            }                        
+    
+                            &:before {
+                                content: "\f058";
+                                font-weight: 900;
+                                color: $blue;
+                            }
+                        }
+    
+                        p{
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .light-business{
+
+        &__questions{
+            margin-bottom: 2.5rem;
+        }
+
+        &__answer{
+            margin-bottom: .5rem;
+        }
+
+        &.form-check{
+            padding-left: 0;
+        }
+    }
+
+    h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem; 
+
+        @media (max-width: 568px) {
+            font-size: 1rem;
+        }
+    }
+
+    .action{
+
+        a{
+            margin-left:.5rem;
+            margin-right:.5rem;
+        }
+    }
+
+    .btn{
+
+        &.tertiary{
+            font-size: 0.875rem;
+        }
+    }
+}
+
+
+

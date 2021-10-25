@@ -1,0 +1,147 @@
+.pagealert{
+
+    &-bgcontent{
+        header {
+            display: block!important;
+        }
+        footer {
+            display: block!important;
+        }
+    }
+
+
+    &-bg{
+        padding: 4rem 2rem;
+        max-width: 350px!important;
+        background: #F5F7FB;
+        border-radius: 10px;
+     
+        @media (min-width: 768px) { 
+            padding: 5rem 8rem;
+            max-width: 570px!important;
+
+        }
+    }
+
+    header {
+        display: none;
+    
+        @media (min-width: 768px) { 
+                display: block;
+            }
+        }
+
+
+    main{
+        max-width: $width-alerts;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    &__icon{
+        font-size: 5.5rem;
+        color: $approved-color;
+        margin-bottom: 1rem;
+    }
+
+    &__title{
+        font-size: 1.1rem;
+        font-family:$font-primary;
+        color:$color-font-secondary;
+        font-weight: normal;
+        margin-bottom: 1rem;
+
+        span{
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+    }
+
+    .btn-primary,.btn-secondary{
+        i{margin-right: 0.5rem;}
+    }
+
+    &__text{
+        color:$color-font;
+        font-family:$font-secondary;
+        font-size: 1rem;
+        font-weight: normal;
+        margin-bottom: 1rem;
+    }
+
+
+    footer{
+        display: none;
+
+        @media (min-width: 768px) { 
+           display: block;
+        }
+
+    }
+
+}
+
+.alertbubble{
+    border: 1px solid #0033A014;
+    background: #0033A00F;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size:0.8rem;
+    font-family:$font-secondary;
+    color:$color-primary;
+
+    i{
+        font-size: 1rem;
+        margin-right: 0.2rem;
+    }
+
+    p{
+        font-size: 0.875rem;
+
+        &.gray{
+            color: $c-gray-3; 
+        }
+
+        &.blue{
+            color: $blue;
+        }
+    }
+}
+
+
+.modal{
+
+   &-content {
+        border: 1px solid #707070;
+        border-radius: 10px;
+    }
+
+    &-header{
+        border: none;
+    }
+    &-footer{
+        border: none;
+    }
+
+    &-title{
+        font-size: 1.1rem;
+        color:$color-font-secondary;
+        font-family: $font-primary;
+    }
+
+    &-body{
+
+        padding: 0rem 1rem;
+
+        p{
+            font-size: 1rem;
+            color: $color-font;
+            font-family: $font-secondary;
+            margin: 0px;
+        }
+    }
+
+    .btn-primary-link{
+        font-weight: bold;
+    }
+}

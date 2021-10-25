@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="msapplication-TileColor" content="#2b5797">
+<meta name="theme-color" content="#ffffff">
+<link href="/sandbox/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<title>Encuesta de vacunación COVID 19 - SURA</title>
+
+   <!--Favicon-->
+   <link rel="apple-touch-icon" sizes="180x180" href="/sandbox/images/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="/sandbox/images/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="/sandbox/images/favicon-16x16.png">
+   <link rel="mask-icon" href="/sandbox/images/safari-pinned-tab.svg" color="#0033a0">
+   
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://unpkg.com/formiojs@v4.12.0/dist/formio.full.min.css">
+   <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+
+   <!-- JS -->
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/eae442b6bc.js" crossorigin="anonymous"></script>
+   <script src="https://unpkg.com/formiojs@v4.12.0/dist/formio.full.min.js"></script>
+   <script src="https://npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+   <script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+   <script src="js/main.js"></script>
+   <script src="js/app.js"></script>
+</head>
+<body>
+	<header class="header-step">
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="nav">
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="bar-element">
+		<div class="progress" data-width="0%">
+			<div class="progress-bar" ></div>
+		</div>
+		<div class="progress-text">0% completado</div>
+	</div>
+	<!--side-bar--open-->
+	<div class="overlay-content overlay-content--open">
+		<div class="side-bar side-bar--open">
+			<div class="side-bar__open active-btn"> 
+				<a href="#no"> <i class="far fa-info-circle"></i> </a>
+			</div>
+			<div class="side-bar__close"> 
+				<a href="#no"> <i class="fad fa-times" style="display:inline-block !important" aria-hidden="true"></i> &nbsp;Cerrar </a>
+			</div>
+			<div class="side-bar__content">
+				<img src="https://www.segurossura.com.co/empresasura/images/logo-landing.svg" style="margin-bottom: 50px;">
+				<!--¿Qué <strong>rumbo tienen tus planes</strong> de vida? <span class="bg-text">Futuros</span>-->
+				<h2 class="title-home">Ayúdanos a confirmar esta información sobre la vacunación contra el COVID-19 que recibiste por parte de <strong>EPS SURA</strong>.<span class="bg-text">COVID</span></h2>
+				<a href="#no" class="btn btn-secondary">Comenzar</a>			
+			</div>
+		</div>
+	</div>
+	<section>
+		<div id="what-is" class="what-is">
+		   <div class="container">
+				<div id="formio">
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer-home mt-auto"> 
+	</footer>
+	
+</body>
+</html>

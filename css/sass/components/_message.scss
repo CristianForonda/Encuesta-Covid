@@ -1,0 +1,199 @@
+.messages{
+
+    .navbar {
+    display: none;
+
+        @media (min-width: 768px) { 
+            display: block;
+        }
+    }
+
+    .questionheader{
+        background: #ffffff;
+        text-align: left;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+
+        @media (min-width: 768px) { 
+            text-align: center;
+            background: $gray-background;
+        }
+
+        &__bar{
+            position: relative;
+            justify-content: flex-start;
+            padding: 0px;
+
+            @media (min-width: 768px) { 
+                justify-content: center;
+            }
+        }
+
+       &__exit{
+            margin-left: auto;
+            appearance: none;
+            position: absolute;
+            border: none;
+            background:transparent;
+            outline: none!important;
+            right: 0px;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+
+        }
+
+        &__vertical{
+            font-size: 0.8rem;
+            font-family: $font-secondary;
+            color: $color-font-muted;
+            font-weight:normal;
+            margin: 0px;
+
+           
+
+            @media (min-width: 768px) { 
+                font-size: 1.1rem;
+            }
+        }
+
+        &__category{
+            font-size: 1.1rem;
+            font-family: $font-secondary;
+            color: $color-font-secondary;
+            font-weight:bold;
+            margin: 0px;
+
+            @media (min-width: 768px) { 
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+
+    .questioncontent{
+
+        &__question {
+            color: $color-font-secondary;
+            font-family: $font-secondary;
+            font-size: 1.2rem;
+            font-weight: normal;
+            margin-bottom: 1.2rem;
+            text-align: left;
+
+            @media (min-width: 768px) { 
+                text-align: center;
+            }
+        }
+
+        &__no {
+            justify-content: flex-end;
+        }
+
+        &__yes {
+            justify-content: flex-end;
+            margin-top: 1rem;
+
+            @media (min-width: 768px) { 
+                margin-top: 0;
+                justify-content: flex-start;
+            }
+        }
+
+        &__no, &__yes{
+
+            button{
+                appearance: none;
+                border: $normal-border;
+                color: $color-primary;
+                background:#ffffff;
+                outline: none!important;
+                width: 4.8rem;
+                border-radius: 25px;
+                height: 3rem;
+                font-size: 1.1rem;
+                font-family: $font-primary;
+                font-weight: 600;
+            }
+            
+        }    
+        
+    }
+    
+    .navquestion{
+
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 0;
+        border: none;
+        padding: 0.8rem;
+        background: #E1E1E1;
+
+        @media (min-width: 768px) { 
+            max-width: 340px;
+            border: 1px solid #D7D7D7;
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 0.5rem 0.8rem;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            margin-bottom: 0.2rem;
+            font-size: 0.8rem;
+            font-family: $font-secondary;
+            font-weight: normal;
+            color: $color-font-secondary;
+        }
+
+        &__progress{
+            display: flex;
+            height: 0.4rem;
+            overflow: hidden;
+            font-size: .75rem;
+            background-color: #FFFFFF;
+            border-radius:1rem;
+
+            @media (min-width: 768px){
+                background-color: #E5E5E5;
+            }
+        }
+        &__progressbar{
+            display: flex;
+            flex-direction: column;
+            -ms-flex-pack: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            background-color: $color-primary;
+            transition: width .6s ease;
+        }
+        &__back,&__next{
+            background:$color-primary;
+            color: white;
+            border-radius: 6px;
+            appearance: none;
+            border: none;
+            height: 2.3rem;
+            width: 2.3rem;
+            outline: none!important;
+            font-size: 1.4rem;
+            line-height: 2.3rem;
+        }
+        
+    }
+
+    footer{
+        display: none;
+
+        @media (min-width: 768px) { 
+           display: block;
+           margin-top: 0px!important;
+
+        }
+
+    }
+
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;300;400;500;600;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+$fsjoey-font-path: "/soy-deportista/fonts/fs-joey";
+
+@font-face {
+    font-family: 'FSJoey-Bold';
+    src: url(/assets/fonts/bold/FSJoey-Bold.eot);
+    src: url(#{$fsjoey-font-path}/bold/FSJoey-Bold.eot) format('embedded-opentype'), url(#{$fsjoey-font-path}/bold/FSJoey-Bold.woff) format('woff'), url(#{$fsjoey-font-path}/bold/FSJoey-Bold.ttf) format('truetype'), url(#{$fsjoey-font-path}/bold/FSJoey-Bold.svg#FSJoey-Bold) format('svg');
+    font-weight: 900
+}
+
+@font-face {
+    font-family: 'FSJoey-Medium';
+    src: url(#{$fsjoey-font-path}/medium/FSJoey-Medium.eot);
+    src: url(#{$fsjoey-font-path}/medium/FSJoey-Medium.eot) format('embedded-opentype'), url(#{$fsjoey-font-path}/medium/FSJoey-Medium.woff) format('woff'), url(#{$fsjoey-font-path}/medium/FSJoey-Medium.ttf) format('truetype'), url(#{$fsjoey-font-path}/medium/FSJoey-Medium.svg#FSJoey-Medium) format('svg');
+    font-weight: 500
+}
+
+@font-face {
+    font-family: 'FSJoey-Light';
+    src: url(#{$fsjoey-font-path}/light/FSJoey-Light.eot);
+    src: url(#{$fsjoey-font-path}/light/FSJoey-Light.eot) format('embedded-opentype'), url(#{$fsjoey-font-path}/light/FSJoey-Light.woff) format('woff'), url(#{$fsjoey-font-path}/light/FSJoey-Light.ttf) format('truetype'), url(#{$fsjoey-font-path}/light/FSJoey-Light.svg#FSJoey-Light) format('svg');
+    font-weight: 100
+}
+
+$color-primary:#0033A0;
+$color-secondary:#EFAA23;
+$color-font:#666666; 
+$color-font-secondary:#333333;
+$color-font-muted:#6f6f6f;
+$font-primary:'Barlow', sans-serif;
+$font-secondary:'Roboto', sans-serif;
+$normal-border:1px solid #D7D7D7;
+$gray-background:#ecf0f1;
+$color-background:#FFFFFF;
+$width-alerts:350px;
+$width-container:770px;
+$highlight-bg:#F5F7FB;
+$approved-color:#23D146;
+
+@import "components/reset.scss"; 
+@import "components/general.scss";
+@import "components/verticales.scss"; 
+@import "components/profile.scss";
+@import "components/message.scss";
+@import "components/alerts.scss";
+@import "components/reports.scss";
+@import "components/forms.scss";  
+@import "components/initial-form.scss";
+@import "pages/landing.scss";  
+@import "responsive.scss";    

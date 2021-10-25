@@ -1,0 +1,366 @@
+
+.vertical{
+    padding: 1rem;
+    border: $normal-border;
+    border-radius: 0.6rem;
+    display: flex;
+    margin-bottom: 1rem;
+
+    &__comments{
+        h3{
+            font-size: 0.7rem;
+            color: $color-font-secondary;
+            font-family: $font-secondary;
+            font-weight: normal;
+
+        }
+
+        p{
+            margin: 0;
+            color: $color-font;
+            font-size: 0.8rem;
+            font-weight: normal;
+            font-family: $font-secondary;
+        }
+    }
+
+    i{
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    &__title{
+        font-size: 1rem;
+        color: $color-font-secondary;
+        font-family: $font-primary;
+        letter-spacing: 0px;
+        font-weight: bold;
+        margin:0px;
+    }
+
+    &__content {
+        width: 100%;
+        padding: 0 0.8rem;
+
+        @media (min-width: 768px) { 
+            padding: 0px;
+        }
+    }
+
+    &__body {
+        margin-bottom: 0.6rem;
+    }
+
+    &__progressnumber {
+        font-size: 1rem;
+        color: $color-font-secondary;
+        font-family: $font-primary;
+        letter-spacing: 0px;
+        font-weight:bold;
+        margin: 0px;
+    }
+
+    &__progress{
+        display: flex;
+        height: 0.6rem;
+        overflow: hidden;
+        font-size: .75rem;
+        background-color: #E5E5E5;
+        border-radius:1rem;
+    }
+    &__progressbar{
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        background-color: $color-primary;
+        transition: width .6s ease;
+
+        &-compare{
+            background: #8F42AB;
+        }
+    }
+    
+
+    @media (min-width: 768px) { 
+        display: block;
+        margin-bottom: 1.5rem;
+     }
+
+}
+
+.main-state{
+    margin: 10px 0;
+    width: 100%;
+
+    .card{
+        margin-bottom: 20px;
+        @include border-radius(10px);
+    }
+}
+
+// Mapa de competitividad
+.competitiveness-map{
+    background-color: $light-blue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    position: relative;
+    @include border-radius(10px);
+
+    .info{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        i{
+            color: $blue;
+            font-size: 26px;
+        }
+    }
+}
+
+// Resultados por vertical
+.state{
+
+    // top
+    &__top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        padding: 20px 80px 20px 20px; 
+        width: 100%;
+    }
+
+    &__col-left{
+        padding-right: 15px;
+        width: 90%;
+    }
+    
+    &__col-right{  
+        text-align: center;
+        width: 70px;
+    
+        p{
+            color: $c-gray-3;
+            font-size: 1.125rem;
+            font-family: $rt;
+            font-weight: bold;
+
+            &.text{
+                font-size: 0.875rem;
+                font-weight: 400;
+                margin-top: 13px;
+                line-height: 10px;
+            }
+        }
+    } 
+    
+    &__title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0;
+
+        h4{
+            font-size: 18px;
+            font-weight: bold;
+
+            i{ 
+                font-size: 1.625rem;
+                margin-right: 10px;
+            }
+        }
+    }
+    
+    &__progress{
+        display: flex;
+        background-color: #E5E5E5;  
+        height: 12px;
+        width: 100%;
+        @include border-radius(20px);
+    }
+
+    &__progressbar{
+        background-color: $green;
+        border-radius: 25px;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        white-space: nowrap;
+        @include transition(all, 0.6s);
+
+        &.dark-green{
+            background-color: $dark-green;
+        } 
+
+        &.green{
+            background-color: $green;
+        }
+
+        &.yellow{
+            background-color: $yellow; 
+        }
+
+        &.orange{
+            background-color: $orange;
+        }
+
+        &.red{
+            background-color: $red;
+        }
+    }
+    
+    &__btn{
+        position: absolute;
+        right: 20px;
+        top: calc(50% - 16.5px);
+
+        a{
+            display: block;
+            background-color: $white;
+            cursor: pointer;
+            position: relative;
+            height: 33px;
+            width: 33px;
+            @include border;
+            @include border-radius(5px);
+            transform: rotate(180deg);
+            @include transition (all, 0.3s);
+            
+            i{
+                font-size: 30px;
+                position: absolute;
+                left: calc(50% - 7.5px);
+                top: calc(50% - 13px);
+            }
+
+            &.collapsed{
+                transform: rotate(0deg);
+            }
+        }
+    }
+
+    // Contenido
+    &__content{
+        padding: 20px;
+        padding-top: 0;
+
+        .card{
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid $gray-border;
+            padding: 15px 0;
+            margin-bottom: 0;
+
+            &:last-child{
+                border: none;
+            }
+
+            .description{
+                margin-top: 10px;
+                font-size: 0.875rem;
+                color: $c-gray-6;
+            }
+        }
+
+        .head{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-right: 60px;
+            position: relative;
+            cursor: pointer;
+
+            .text{
+                width: 50%;
+
+                p{
+                    font-family: $rt;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    color: $c-gray-3;
+                }
+            } 
+
+            .calification{
+                align-items: center;
+                display: flex;
+                justify-content: flex-end;
+                text-align: right;
+                width: 50%;
+
+                p{
+                    position: relative;
+                    font-size: 0.875rem;
+                    display: inline-block;
+                    width: 100px;
+                    text-align: left;
+
+                    
+                    &:before{
+                        content: " ";
+                        background-color: $c-gray-3;
+                        position: absolute;
+                        top: calc(50% - 4px);
+                        left: -20px; 
+                        height: 8px;
+                        width: 8px;
+                        @include border-radius(50%);
+                    }
+
+                    &.good{
+                        
+                        &:before{
+                            background-color: $green;
+                        }    
+                    }
+
+                    &.opportunities{
+
+                        &::before{
+                            background-color: $orange;
+                        }
+                    }
+                }
+            }
+
+            i{
+                position: absolute;
+                right: 12px;
+                top: calc(50% - 13px); 
+
+                &::before{
+                    content: "\f068";
+                    font-size: 1.25rem;
+                    font-size: 0.875rem;
+                    @include icon;
+                }
+            }
+
+            &.collapsed{
+
+                i{
+                    &::before{
+                        content: "\f067";
+                    }
+                }
+
+                .text{
+
+                    p{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
